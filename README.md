@@ -56,13 +56,13 @@ now change to remote pc:
 		vgextend main /dev/mapper/lvmB 
 		lvcreate -l 100%FREE -n home main
 
-make filesystems for all partitions:
+	make filesystems for all partitions:
 
-	mkfs.ext4 -L root -O \^64bit /dev/mapper/main-root
-	mkfs.ext4 -L data -O \^64bit /dev/mapper/main-data
-	mkswap -L swap /dev/mapper/main-swap
+		mkfs.ext4 -L root -O \^64bit /dev/mapper/main-root
+		mkfs.ext4 -L data -O \^64bit /dev/mapper/main-data
+		mkswap -L swap /dev/mapper/main-swap
 
-	mkfs.ext4 -L home -O \^64bit /dev/mapper/main-home
+		mkfs.ext4 -L home -O \^64bit /dev/mapper/main-home
 
 5. mount partitions in folders:
 	
