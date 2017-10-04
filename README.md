@@ -1,5 +1,5 @@
-# P5
-Arch Linux encrypted 2 HDD installation
+# Arch Linux encrypted 2 HDD installation
+
 
 scenario:
 	sda = root 100G & swap 8G  & (left space) data
