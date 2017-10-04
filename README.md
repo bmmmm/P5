@@ -2,6 +2,7 @@
 
 
 scenario:
+
 	sda = root 100G & swap 8G  & (left space) data
 	sda1 = UEFI boot
 	sda2 = luks lvm
