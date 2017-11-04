@@ -1,4 +1,4 @@
-# Arch Linux encrypted 2 HDD installation
+# Arch Linux encrypted 2 HDD installation and UEFI Boot
 
 
 scenario:
@@ -104,10 +104,12 @@ now change to remote pc:
 	
 		echo ArchComputer > /etc/hostname
 
-		nano /etc/locale.conf
 
 	write following lines into **/etc/locale.conf**:
 	
+		1-liner:
+		echo LANG=de_DE.UTF-8 > /etc/locale.conf && echo LC_COLLATE=C >> /etc/locale.conf && echo LANGUAGE=de_DE >> /etc/locale.conf
+		OR
 		echo LANG=de_DE.UTF-8 > /etc/locale.conf
 		echo LC_COLLATE=C >> /etc/locale.conf
 		echo LANGUAGE=de_DE >> /etc/locale.conf
