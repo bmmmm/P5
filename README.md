@@ -141,9 +141,10 @@ now change to remote pc:
 		mkdir -p /boot/grub/locale
 		cp /usr/share/locale/en\@quot/LC_MESSAGES/grub.mo /boot/grub/locale/en.mo
 
-	check UUID from encrypted partition sda2:
+	check UUID from encrypted partition sda2 (make sure you got root permissions! sudo blkid):
 	
 		blkid
+		
 
 		open **/etc/default/grub** and comment existing **GRUB_CMDLINE_LINUX=""** and replace with:
 		nano /etc/default/grub
